@@ -7,12 +7,12 @@ ruby file: ".ruby-version"
 gem "rails", "~> 8.1.3"
 gem "rails-i18n", "~> 8.1.0"
 
-gem "aws-sdk-s3", "~> 1.223"
-gem "aws-sdk-sqs", "~> 1.114"
+gem "aws-sdk-s3", "~> 1.225"
+gem "aws-sdk-sqs", "~> 1.116"
 gem "bootsnap", "~> 1.24"
 gem "clearance", "~> 2.12"
 gem "dalli", "~> 3.2"
-gem "datadog", "~> 2.33"
+gem "datadog", "~> 2.35"
 gem "dogstatsd-ruby", "~> 5.7"
 gem "google-protobuf", "~> 4.35"
 gem "faraday", "~> 2.14"
@@ -31,7 +31,7 @@ gem "octokit", "~> 10.0"
 gem "omniauth-github", "~> 2.0"
 gem "omniauth", "~> 2.1"
 gem "omniauth-rails_csrf_protection", "~> 2.0"
-gem "openid_connect", "~> 2.4"
+gem "openid_connect", "~> 2.5"
 gem "pg", "~> 1.6"
 gem "public_suffix", "~> 7.0"
 gem "puma", "~> 6.6"
@@ -58,10 +58,10 @@ gem "webauthn", "~> 3.4"
 gem "browser", "~> 6.2"
 gem "bcrypt", "~> 3.1"
 gem "blazer", "~> 3.4.0"
-gem "maintenance_tasks", "~> 2.16"
+gem "maintenance_tasks", "~> 2.17"
 gem "strong_migrations", "~> 2.8"
 gem "phlex-rails", "~> 2.4"
-gem "discard", "~> 1.4"
+gem "discard", "~> 2.0"
 gem "user_agent_parser", "~> 2.21"
 gem "pghero", "~> 3.8"
 gem "faraday-multipart", "~> 1.2"
@@ -81,7 +81,7 @@ gem "prop_initializer", "~> 0.4"
 
 group :avo, optional: true do
   source "https://packager.dev/avo-hq/" do
-    gem "avo-advanced", "~> 3.31"
+    gem "avo-advanced", "~> 3.32"
   end
 end
 
@@ -119,7 +119,7 @@ group :development, :test do
   gem "pg_query", "~> 6.2"
 
   # bundle show | rg rubocop | cut -d' ' -f4 | xargs bundle update
-  gem "rubocop", "~> 1.86", require: false
+  gem "rubocop", "~> 1.87", require: false
   gem "rubocop-rails", "~> 2.35", require: false
   gem "rubocop-performance", "~> 1.26", require: false
   gem "rubocop-minitest", "~> 0.39", require: false
